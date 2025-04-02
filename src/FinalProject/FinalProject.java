@@ -61,8 +61,7 @@ public class FinalProject {
             System.out.println("3 - Print the schedule of a Faculty");
             System.out.println("4 - Print the schedule of a TA");
             System.out.println("5 - Print the Schedule of a Student");
-            System.out.println("6 - Delete a Lecture");
-            System.out.println("7 - Exit");
+            System.out.println("6 - Exit");
             System.out.print("\t\t Enter your choice: ");
 
             Scanner scan = new Scanner(System.in);
@@ -520,34 +519,10 @@ public class FinalProject {
                 if (!foundStudent) {
                     System.out.println("No existing Student with ID entered.");
                 }
-            } else if (choice == 6) { // Deletes a scheduled lecture
-                System.out.print("Enter the crn of the lecture to delete: ");
-                String crnDelete = scan.next();
 
-            } else if (choice == 7) { // Exits program___________________________________________________________________________________________________________________________
-                if (lecArray.length < 26) {
-                    System.out.println("You have made a deletion of at least one lecture. Would you like to print the copy of lec.txt?");
-                    System.out.print("Enter y/Y for yes or n/N for no: ");
-                    String answer = scan.next();
-                    if (answer.equalsIgnoreCase("y")) {
-                        for (int j2 = 0; j2 < lecArray.length; j2++) {
-                            System.out.println(lecArray[j2]);
-                            j++;
-                        }
-                        System.out.println("Bye!");
-                        j++;
-                    } else if (answer.equalsIgnoreCase("n")) {
-                        System.out.println("Bye!");
-                        j++;
-                    }
-                } else {
-                    System.out.println("No lectures have been deleted.");
-                    System.out.println("Bye");
-                    j++;
-                }
-            } else {
-                System.out.println("Invalid selection");
-                System.out.println("Try again");
+            } else if (choice == 6) { // Exits program___________________________________________________________________________________________________________________________
+                System.out.println("Bye!");
+                j++;
             }
         }
     }
