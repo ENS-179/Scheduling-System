@@ -17,7 +17,7 @@ public class FinalProject {
         String file = null;
         int i = 0;
 
-        System.out.print("Enter the absolute path of the file: ");
+        System.out.print("Enter the absolute path of lec.txt: ");
         while (i == 0) { // loops until user enters a correct file address
             file = fileScan.nextLine();
             try { // scanner reads file lec.txt
